@@ -1,0 +1,123 @@
+/* Archivo: Estilos.css */
+
+/* 🎨 Variables */
+:root {
+  --color-fondo: #f8fafc;
+  --color-card: #ffffff;
+  --color-texto: #1e293b;
+  --color-sub: #64748b;
+  --color-acento: #161a23;
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radio: 12px;
+  --max-width: 1000px;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-fondo);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* Encabezado */
+.site-header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background: var(--color-acento);
+  color: white;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: var(--max-width);
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Grid de integrantes */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px; /* más espacio entre tarjetas */
+}
+
+/* Tarjeta de integrante */
+.member-card {
+  background: var(--color-card);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.avatar {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 20px;
+}
+
+.name {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: var(--color-texto);
+}
+
+.details {
+  list-style: none;
+  font-size: 0.9rem;
+  color: var(--color-sub);
+  margin-bottom: 12px;
+}
+
+.details li {
+  margin: 6px 0;
+}
+
+.bio {
+  font-size: 0.95rem;
+  color: var(--color-texto);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: #e2e8f0;
+  font-size: 0.85rem;
+  color: var(--color-sub);
+}
+
+/* 🔹 Centrar el tercer integrante */
+.center-card {
+  grid-column: 1 / -1;   /* ocupa toda la fila */
+  max-width: 350px;      /* ancho fijo */
+  margin: 0 auto;        /* centrado horizontal */
+}
