@@ -1,0 +1,39 @@
+/* EstilosLuisa.css */
+
+/* Fondo con imagen personalizada */
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+    /* Aquí puedes cambiar la URL por la imagen que quieras */
+    background: url("Cinnamon.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    color: #444;
+}
+
+/* Contenedor principal */
+.contenedor {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Título */
+h1 {
+    font-size: 3rem;
+    color: #4a90e2;
+    text-shadow: 2px 2px #fff;
+}
+
+/* Caja de información */
+.caja-texto {
+    max-width: 600px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
