@@ -1,0 +1,35 @@
+/* Estilo del fondo */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("COREA.jpg"); /* Aquí colocas tu imagen */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Caja de texto */
+.caja-texto {
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.85); /* Caja semitransparente */
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Título */
+.caja-texto h1 {
+    text-align: center;
+    color: #b22222;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+/* Párrafo */
+.caja-texto p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+}
